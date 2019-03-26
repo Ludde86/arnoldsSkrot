@@ -1,0 +1,187 @@
+.container{
+	display: grid;
+	grid-template-rows: 4fr 2fr 25fr 8fr;
+	grid-template-areas: 
+		"sidhuvud sidhuvud sidhuvud sidhuvud"
+		"meny meny meny meny"
+		"huvudinnehåll huvudinnehåll huvudinnehåll övrigt"
+		"sidfot sidfot sidfot sidfot"
+}
+.box-1{
+	grid-area: sidhuvud;
+	background: lightgray;
+	display: flex;
+	border-radius: 15px; 
+}
+.box-1 div{
+	align-self: flex-end;
+	background: white;
+	height: 50px;
+	width: 250px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+.box-1 p{
+	white-space: nowrap;
+	position: absolute;
+  	left: 60px;
+  	font-family: monospace;
+  	font-size: larger; 
+}
+.box-1 img{
+	float: right;
+	height: 100%;
+	padding-right: 15px;
+}
+.box-2{
+	grid-area: meny;
+	background: white;
+	display: flex;
+	justify-content: flex-end;
+}
+.box-2 div{
+	background: lightgray;
+	text-align: center;
+	margin: 10px;
+	width: 203px;
+	border-radius: 15px;
+}
+.box-2 a{
+	font-family: fantasy;
+	color: black;
+}
+a:hover{
+	color: blue;
+}
+.box-3{
+	grid-area: övrigt;
+	background: gray;
+	border-top-right-radius: 15px;
+}
+.box-3 p{
+	padding-right: 15px;
+	font-style: italic;
+}
+.box-3 h3{
+	padding-top: 30px;
+}
+.box-4{
+	grid-area: huvudinnehåll;
+	background: gray;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: monospace;
+	border-top-left-radius: 15px;
+}
+.box-4 div{
+	background: lightgray;
+	width: 31%;
+	border-radius: 15px;
+}
+.box-4 h1{
+
+}
+.box-4 img{
+  	width:100%;
+  	border-radius: 15px;
+  	margin-top: 50px;
+}
+.box-4 button{
+	background-color: silver;
+	border-radius: 5px;
+}
+.lätt{
+	height: 47%;
+}
+.mellan{
+	height: 40%;
+}
+.tung{
+	height: 47%;
+}
+.box-5{
+	grid-area: sidfot;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	background: darkgray;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.box-5 h4{
+	font-family: monospace;
+	color: gray;
+	padding-top: 4%;
+	padding-left: 20%;
+	margin-right: -300px;
+}
+.box-5 img{
+	align-self: center;
+	max-width:500px;
+  	max-height:150px;
+	border-radius: 15px;
+	margin-left: 150px;
+}
+.kontaktinfo{
+	background: black;
+	font-style: oblique;
+	display: flex;
+	flex-wrap: wrap;
+}
+.kontaktinfo div{
+	width: 600px;
+	background: white;
+	border-radius: 15px;
+}
+.kontaktinfo img{
+  	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.kontaktinfo h2{
+	padding-left: 232px;
+	margin-top: 5px;
+	margin-bottom: -15px;
+}
+.kontaktinfo p{
+	padding-left: 232px;
+}
+.kontaktinfo ul{
+	font-size: 17px;
+	position: absolute;
+	top: 130px;
+  	left: 200px;
+  	width: 10px;
+  	height: 10px;
+}
+.kontaktinfo li{
+	white-space: nowrap;
+	margin-left: 18px;
+}
+.produktinfo{
+	background-color: gray;
+	font-family: monospace;
+	font-size: larger;
+	font-style: oblique;
+	text-align: center;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 30%;
+}
+.produktinfo table{
+	background-color: lightgray;
+	border: solid black 5px;
+	border-radius: 15px;
+	width: 108%;
+}
+.produktinfo th, td{
+	background-color: lightgray;
+	border: solid black 5px;
+	border-radius: 15px;
+	width: 50%;
+}
