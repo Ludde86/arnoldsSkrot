@@ -96,7 +96,8 @@ a:hover{
 .box-4 img{
   	width:100%;
   	border-radius: 15px;
-  	margin-top: 50px;
+	margin-top: 50px;
+	height: 180px;  
 }
 .box-4 button{
 	background-color: silver;
@@ -104,15 +105,6 @@ a:hover{
 }
 .box-4 button:hover{
 	color: dimgray;
-}
-.lätt{
-	height: 47%;
-}
-.mellan{
-	height: 40%;
-}
-.tung{
-	height: 47%;
 }
 .box-5{
 	grid-area: sidfot;
