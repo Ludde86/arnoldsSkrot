@@ -1,19 +1,28 @@
+html, body{
+	height: 100%;
+	margin: 0; padding: 0;
+	
+}
 .container{
 	display: grid;
+	
+	
+	border: dotted black 1px;
 	grid-template-rows: 4fr 2fr 25fr 8fr;
 	grid-template-areas: 
 		"sidhuvud sidhuvud sidhuvud sidhuvud"
 		"meny meny meny meny"
 		"huvudinnehåll huvudinnehåll huvudinnehåll övrigt"
-		"sidfot sidfot sidfot sidfot"
+		"sidfot sidfot sidfot sidfot"	
 }
-.box-1{
+.sidhuvud{
 	grid-area: sidhuvud;
+	border: dotted black 1px;
 	background: lightgray;
 	display: flex;
-	border-radius: 15px; 
+	
 }
-.box-1 div{
+.sidhuvud div{
 	align-self: flex-end;
 	background: white;
 	height: 50px;
@@ -22,60 +31,62 @@
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
-.box-1 p{
+.sidhuvud p{
 	white-space: nowrap;
 	position: absolute;
   	left: 60px;
   	font-family: monospace;
   	font-size: larger; 
 }
-.box-1 img{
+.sidhuvud img{
 	float: right;
 	height: 100%;
 	padding-right: 15px;
 }
-.box-2{
+.meny{
 	grid-area: meny;
+	border: dotted black 1px;
 	background: white;
 	display: flex;
 	justify-content: flex-end;
 }
-.box-2 div{
+.meny div{
 	background: lightgray;
 	text-align: center;
 	margin: 10px;
 	width: 203px;
 	border-radius: 15px;
 }
-.box-2 a{
+.meny a{
 	font-family: fantasy;
 	color: black;
 }
 a:hover{
 	color: blue;
 }
-.box-3{
+.övrigt{
 	grid-area: övrigt;
-	background: gray;
-	border-top-right-radius: 15px;
+	border: dotted purple 1px;
+	background: white;
 }
-.box-3 p{
-	padding-right: 15px;
+.övrigt p{
+	
 	font-style: italic;
 }
-.box-3 h3{
+.övrigt h3{
 	padding-top: 30px;
 }
-.box-3 button{
+.övrigt button{
 	background-color: silver;
 	border-radius: 5px;
 }
-.box-3 button:hover{
+.övrigt button:hover{
 	color: dimgray;
 }
-.box-4{
+.huvudinnehåll{
 	grid-area: huvudinnehåll;
-	background: gray;
+	border: dotted black 1px;
+	background: white;
 	display: flex;
 	justify-content: space-around;
 	padding-top: 50px;
@@ -83,46 +94,46 @@ a:hover{
 	padding-left: 10px;
 	padding-right: 10px;
 	font-family: monospace;
-	border-top-left-radius: 15px;
+	
 }
-.box-4 div{
-	background: lightgray;
+.huvudinnehåll div{
+	border: solid black 1px;
+	background: white;
 	width: 31%;
-	border-radius: 15px;
 }
-.box-4 h1{
+.huvudinnehåll h1{
 
 }
-.box-4 img{
+.huvudinnehåll img{
   	width:100%;
   	border-radius: 15px;
 	margin-top: 50px;
 	height: 180px;  
 }
-.box-4 button{
+.huvudinnehåll button{
 	background-color: silver;
 	border-radius: 5px;
 }
-.box-4 button:hover{
+.huvudinnehåll button:hover{
 	color: dimgray;
 }
-.box-5{
+.sidfot{
 	grid-area: sidfot;
+	border: dotted black 1px;
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
 	background: darkgray;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
+	
 }
-.box-5 h4{
+.sidfot h4{
 	font-family: monospace;
 	color: gray;
 	padding-top: 4%;
 	padding-left: 20%;
 	margin-right: -300px;
 }
-.box-5 img{
+.sidfot img{
 	align-self: center;
 	max-width:500px;
   	max-height:150px;
@@ -181,50 +192,40 @@ a:hover{
 	color: blue;
 }
 .produktinfo{
-	background-color: lightgray;
+	grid-area: huvudinnehåll;
+	border: dotted red 1px;
+	background: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-family: monospace;
-	font-size: 20px;
-	font-style: oblique;
-	text-align: center;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	width: 100%;
+	
+	
+}
+.produktinfo div{
+	
+	
 }
 .produktinfo table{
+	
 	background-color: white;
-	border: solid black 5px;
-	border-radius: 15px;
-	width: 108%;
+	border: solid black 1px;
+	margin-right: 500px;
+	width: 100%;
+	height: 422px;
 }
 .produktinfo tr{
-	height: 100px;
+	
+	
 }
 .produktinfo th, td{
 	background-color: darkgray;
-	border: solid black 5px;
-	border-radius: 15px;
-	width: 50%;
+	border: solid red 1px;
+	width:100%;
+	
 }
 .produktinfo th{
-	font-size: 30px; 
+	font-size:100%;
+	
 }
-.produktinfo div{
-	margin-left: 90px;
-	margin-top: 90px;
-	width: 80%;
-}
-.produktinfo a{
-	display: flex;
-	justify-content: center;
-	width: 10%;
-	background-color: white;
-	border-radius: 10px;
-	color: black;
-	font-family: fantasy;
-	font-style: normal;
-	margin-left: 97%;
-}
-.produktinfo a:hover{
-	color: blue;
-}
-
