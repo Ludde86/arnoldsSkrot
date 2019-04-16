@@ -221,14 +221,14 @@ td {
   text-decoration: underline;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .huvudinnehåll div {
     width: 200px;
     height: 280px;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .huvudinnehåll img {
     margin: 25%;
     width: 100px;
@@ -236,7 +236,7 @@ td {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .sidfot h4 {
     margin-right: 200px;
   }
