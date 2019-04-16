@@ -226,16 +226,16 @@ td {
 
 @media (max-width: 1400px) {
   .huvudinnehåll div {
-    width: 200px;
-    height: 280px;
+    width: 300px;
+    height: 380px;
   }
 }
 
 @media (max-width: 1400px) {
   .huvudinnehåll img {
-    margin: 25%;
-    width: 100px;
-    height: 80px;
+    margin: 15%;
+    width: 200px;
+    height: 180px;
   }
 }
 
@@ -263,7 +263,46 @@ td {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
+  .huvudinnehåll div {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .huvudinnehåll img {
+    margin: 25%;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidfot h4 {
+    margin-right: 200px;
+  }
+  .sidfot img {
+    width: 150px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .kontaktinfo-2 div {
+    width: 450px;
+    height: 224px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .produktinfo table {
+    width: 450px;
+    height: 224px;
+  }
+}
+
+@media (max-width: 1000px) {
   .meny {
     width: 450px;
     height: 45px;
