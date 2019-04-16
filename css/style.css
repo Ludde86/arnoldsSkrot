@@ -50,7 +50,6 @@ body {
   background: white;
   display: flex;
   justify-content: flex-end;
-  border-bottom: solid black 1px;
 }
 .meny div {
   background: lightgray;
@@ -70,6 +69,7 @@ a:hover {
 .övrigt {
   grid-area: övrigt;
   background: white;
+  border-top: solid black 1px;
 }
 .övrigt h3 {
   padding-top: 30px;
@@ -98,6 +98,7 @@ a:hover {
   background: white;
   padding: 50px 10px;
   font-family: monospace;
+  border-top: solid black 1px;
 }
 .huvudinnehåll div {
   border: solid black 1px;
@@ -159,6 +160,7 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
   font-family: monospace;
+  border-top: solid black 1px;
 }
 .kontaktinfo-2 div {
   border: solid black 1px;
@@ -198,6 +200,7 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
   font-family: monospace;
+  border-top: solid black 1px;
 }
 .produktinfo div {
 }
@@ -243,5 +246,26 @@ td {
   .sidfot img {
     width: 150px;
     margin-right: 100px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .kontaktinfo-2 div {
+    width: 450px;
+    height: 224px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .produktinfo table {
+    width: 450px;
+    height: 224px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .meny {
+    width: 450px;
+    height: 45px;
   }
 }
