@@ -1,222 +1,234 @@
-html, body{
-	height: 100%;
-	margin: 0; padding: 0;
-	
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-.container{
-	border: solid black 1px;
-	display: grid;
-	grid-template-rows: 4fr 2fr 25fr 8fr;
-	grid-template-areas: 
-		"sidhuvud sidhuvud sidhuvud sidhuvud"
-		"meny meny meny meny"
-		"huvudinnehåll huvudinnehåll huvudinnehåll övrigt"
-		"sidfot sidfot sidfot sidfot"	
-}
-
-.sidhuvud{
-	grid-area: sidhuvud;
-	background: lightgray;
-	display: flex;
-	border-bottom: solid black 1px;
-}
-.sidhuvud div{
-	align-self: flex-end;
-	background: white;
-	height: 50px;
-	width: 250px;
-	margin-left: 5px;
-	margin-bottom: 10px;
-	border-radius: 5px;
-	border: solid black 1px;
-}
-.sidhuvud p{
-	white-space: nowrap;
-	position: absolute;
-  	left: 60px;
-  	font-family: monospace;
-  	font-size: larger; 
-}
-.sidhuvud img{
-	float: right;
-	height: 100%;
-	padding-right: 15px;
-}
-.meny{
-	grid-area: meny;
-	background: white;
-	display: flex;
-	justify-content: flex-end;
-	border-bottom: solid black 1px;
-}
-.meny div{
-	background: lightgray;
-	text-align: center;
-	margin: 10px;
-	width: 203px;
-	border-radius: 5px;
-	border: solid black 1px;
-}
-.meny a{
-	font-family: fantasy;
-	color: black;
-}
-a:hover{
-	color: blue;
-}
-.övrigt{
-	grid-area: övrigt;
-	background: white;
-}
-.övrigt h3{
-	padding-top: 30px;
-	padding-left: 10px;
-}
-.övrigt p{
-	font-style: italic;
-	padding-left: 10px;
-}
-.övrigt button{
-	background-color: silver;
-	border-radius: 5px;
-	margin-left: 10px;
-}
-.övrigt button:hover{
-	color: dimgray;
-}
-.undrar{
-	float: right;
-	padding-right: 25px;
-}
-.huvudinnehåll{
-	grid-area: huvudinnehåll;
-	display: flex;
-	align-items: center;
-	background: white;
-	padding: 50px 10px;
-	font-family: monospace;
-}
-.huvudinnehåll div{
-	border: solid black 1px;
-	background: white;
-	width: 50%;
-	height: 100%;
-	margin: 10px;
-	border-radius: 5px;
-}
-.huvudinnehåll h1{
-	margin-left: 10px;
-}
-.huvudinnehåll img{
-	margin: 10%;
-	width: 300px;
-	height: 150px;
-}
-.huvudinnehåll button{
-	background-color: silver;
-	border-radius: 3px;
-	margin-left: 10px;
-}
-.huvudinnehåll button:hover{
-	color: dimgray;
-}
-.sidfot{
-	grid-area: sidfot;
-	display: flex;
-	justify-content: space-around;
-	align-content: center;
-	background: darkgray;
-	border-top: solid black 1px;
-}
-.sidfot h4{
-	font-family: monospace;
-	color: gray;
-	padding-top: 4%;
-	padding-left: 20%;
-	margin-right: -300px;
-}
-.sidfot img{
-	align-self: center;
-	max-width:500px;
-  	max-height:150px;
-	border-radius: 15px;
-}
-.kontaktinfo{
-	background: black;
-	font-style: oblique;
-	display: flex;
-	flex-wrap: wrap;
-}
-.kontaktinfo-2{
-	grid-area: huvudinnehåll;
-	background: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-family: monospace;
-	
-}
-.kontaktinfo-2 div{
-	border: solid black 1px;
-	width: 600px;
-	height: 225px;
-}
-.kontaktinfo-2 img{
-	float: left;
+.container {
+  border: solid black 1px;
+  display: grid;
+  grid-template-rows: 4fr 2fr 25fr 8fr;
+  grid-template-areas:
+    "sidhuvud sidhuvud sidhuvud sidhuvud"
+    "meny meny meny meny"
+    "huvudinnehåll huvudinnehåll huvudinnehåll övrigt"
+    "sidfot sidfot sidfot sidfot";
 }
 
-.kontaktinfo-2 h2{
-	padding-left: 232px;
-	margin-top: 5px;
-	margin-bottom: -15px;
+.sidhuvud {
+  grid-area: sidhuvud;
+  background: lightgray;
+  display: flex;
+  border-bottom: solid black 1px;
 }
-.kontaktinfo-2 p{
-	padding-left: 232px;
+.sidhuvud div {
+  align-self: flex-end;
+  background: white;
+  height: 50px;
+  width: 250px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid black 1px;
 }
-.kontaktinfo-2 ul{
-	font-size: 17px;
-	position: absolute;
-	top: 305px;
-  	left: 210px;
-  	width: 10px;
-  	height: 10px;
+.sidhuvud p {
+  white-space: nowrap;
+  position: absolute;
+  left: 60px;
+  font-family: monospace;
+  font-size: larger;
 }
-.kontaktinfo-2 li{
-	/* tar bort mellanrum */
-	white-space: nowrap;
-	margin-left: 18px;
+.sidhuvud img {
+  float: right;
+  height: 100%;
+  padding-right: 15px;
 }
-.produktinfo{
-	grid-area: huvudinnehåll;
-	background: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-family: monospace;
+.meny {
+  grid-area: meny;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: solid black 1px;
 }
-.produktinfo div{
-	
-	
+.meny div {
+  background: lightgray;
+  text-align: center;
+  margin: 10px;
+  width: 203px;
+  border-radius: 5px;
+  border: solid black 1px;
 }
-.produktinfo table{
-	background-color: white;
-	border: solid black 1px;
-	width: 600px;
-	height: 225px;
+.meny a {
+  font-family: fantasy;
+  color: black;
 }
-.produktinfo tr{
-	
-	
+a:hover {
+  color: blue;
 }
-.produktinfo th, td{
-	background-color: darkgray;
-	width:100px;
-	font-size:125%;
-	text-align: center;
+.övrigt {
+  grid-area: övrigt;
+  background: white;
 }
-.produktinfo th{
-	font-size:150%;
-	text-decoration: underline;
+.övrigt h3 {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.övrigt p {
+  font-style: italic;
+  padding-left: 10px;
+}
+.övrigt button {
+  background-color: silver;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.övrigt button:hover {
+  color: dimgray;
+}
+.undrar {
+  float: right;
+  padding-right: 25px;
+}
+.huvudinnehåll {
+  grid-area: huvudinnehåll;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 50px 10px;
+  font-family: monospace;
+}
+.huvudinnehåll div {
+  border: solid black 1px;
+  background: white;
+  width: 50%;
+  height: 100%;
+  margin: 10px;
+  border-radius: 5px;
+}
+.huvudinnehåll h1 {
+  margin-left: 10px;
+}
+.huvudinnehåll img {
+  margin: 10%;
+  width: 250px;
+  height: 150px;
+}
+.huvudinnehåll button {
+  background-color: silver;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.huvudinnehåll button:hover {
+  color: dimgray;
+}
+.sidfot {
+  grid-area: sidfot;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: darkgray;
+  border-top: solid black 1px;
+}
+.sidfot h4 {
+  font-family: monospace;
+  color: gray;
+  padding-top: 4%;
+  padding-left: 20%;
+  margin-right: -300px;
+}
+.sidfot img {
+  align-self: center;
+  max-width: 500px;
+  max-height: 150px;
+  border-radius: 15px;
+}
+.kontaktinfo {
+  background: black;
+  font-style: oblique;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kontaktinfo-2 {
+  grid-area: huvudinnehåll;
+  background: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: monospace;
+}
+.kontaktinfo-2 div {
+  border: solid black 1px;
+  width: 600px;
+  height: 225px;
+}
+.kontaktinfo-2 img {
+  float: left;
+}
+
+.kontaktinfo-2 h2 {
+  padding-left: 232px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+.kontaktinfo-2 p {
+  padding-left: 232px;
+}
+.kontaktinfo-2 ul {
+  font-size: 17px;
+  position: absolute;
+  top: 305px;
+  left: 210px;
+  width: 10px;
+  height: 10px;
+}
+.kontaktinfo-2 li {
+  /* tar bort mellanrum */
+  white-space: nowrap;
+  margin-left: 18px;
+}
+.produktinfo {
+  grid-area: huvudinnehåll;
+  background: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: monospace;
+}
+.produktinfo div {
+}
+.produktinfo table {
+  background-color: white;
+  border: solid black 1px;
+  width: 600px;
+  height: 225px;
+}
+.produktinfo tr {
+}
+.produktinfo th,
+td {
+  background-color: darkgray;
+  width: 100px;
+  font-size: 125%;
+  text-align: center;
+}
+.produktinfo th {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  .huvudinnehåll div {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .huvudinnehåll img {
+    margin: 25%;
+    width: 100px;
+    height: 80px;
+  }
 }
