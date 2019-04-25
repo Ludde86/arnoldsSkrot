@@ -1,7 +1,6 @@
 html,
 body {
-  position: relative;
-  min-height: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +16,6 @@ body {
     "huvudinnehåll huvudinnehåll huvudinnehåll övrigt"
     "sidfot sidfot sidfot sidfot";
 }
-
 .sidhuvud {
   grid-area: sidhuvud;
   background: lightgray;
@@ -31,7 +29,7 @@ body {
   width: 250px;
   margin-left: 5px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: solid black 1px;
 }
 .sidhuvud p {
@@ -74,16 +72,16 @@ a:hover {
 }
 .övrigt h3 {
   padding-top: 30px;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 .övrigt p {
   font-style: italic;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 .övrigt button {
   background-color: silver;
   border-radius: 5px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 .övrigt button:hover {
   color: dimgray;
@@ -107,7 +105,7 @@ a:hover {
   width: 50%;
   height: 100%;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .huvudinnehåll h1 {
   margin-left: 10px;
@@ -128,30 +126,27 @@ a:hover {
 .sidfot {
   grid-area: sidfot;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
   background: darkgray;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
 }
+.sidfot div {
+  display: flex;
+  margin: 10px;
+}
 .sidfot h4 {
+  width: 100%;
+  align-self: center;
   font-family: monospace;
   color: gray;
-  padding-top: 4%;
-  padding-left: 20%;
-  margin-right: -300px;
 }
 .sidfot img {
   align-self: center;
-  max-width: 500px;
-  max-height: 150px;
-  border-radius: 15px;
-}
-.kontaktinfo {
-  background: black;
-  font-style: oblique;
-  display: flex;
-  flex-wrap: wrap;
+  width: 220px;
+  height: 120px;
+  border-radius: 5px;
+  margin-left: 200px;
 }
 .kontaktinfo-2 {
   grid-area: huvudinnehåll;
@@ -183,7 +178,7 @@ a:hover {
 .kontaktinfo-2 ul {
   font-size: 17px;
   position: absolute;
-  top: 305px;
+  top: 310px;
   left: 210px;
   width: 10px;
   height: 10px;
@@ -192,6 +187,15 @@ a:hover {
   /* tar bort mellanrum */
   white-space: nowrap;
   margin-left: 18px;
+}
+.kontaktinfo-2 span {
+  font-size: 17px;
+  text-decoration-line: underline;
+  position: absolute;
+  top: 305px;
+  left: 250px;
+  width: 10px;
+  height: 10px;
 }
 .produktinfo {
   grid-area: huvudinnehåll;
@@ -203,15 +207,12 @@ a:hover {
   font-family: monospace;
   border-top: solid black 1px;
 }
-.produktinfo div {
-}
 .produktinfo table {
   background-color: white;
   border: solid black 1px;
+  border-radius: 2px;
   width: 600px;
   height: 225px;
-}
-.produktinfo tr {
 }
 .produktinfo th,
 td {
@@ -225,44 +226,6 @@ td {
   text-decoration: underline;
 }
 
-@media (max-width: 1400px) {
-  .sidfot h4 {
-    margin-right: 200px;
-  }
-  .sidfot img {
-    width: 150px;
-    margin-right: 100px;
-  }
-  .kontaktinfo-2 div {
-    width: 450px;
-    height: 224px;
-  }
-  .kontaktinfo-2 h2 {
-    font-size: 18px;
-  }
-  .produktinfo table {
-    width: 450px;
-    height: 224px;
-  }
-}
-@media (max-width: 1000px) {
-  .sidfot h4 {
-    margin-right: 200px;
-  }
-  .sidfot img {
-    width: 150px;
-    margin-right: 100px;
-  }
-  .kontaktinfo-2 div {
-    width: 450px;
-    height: 224px;
-  }
-
-  .produktinfo table {
-    width: 450px;
-    height: 224px;
-  }
-}
 @media (max-width: 768px) {
   /* layout för mobil */
 
@@ -282,7 +245,14 @@ td {
     padding: 10px;
   }
   .huvudinnehåll div {
-    height: 200px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .huvudinnehåll img {
+    width: 30%;
+    height: 60px;
   }
   .övrigt {
     font-size: 10px;
@@ -304,19 +274,29 @@ td {
   .undrar {
     float: left;
   }
-
   .sidfot {
-    width: 100%;
-    height: 130px;
+    grid-area: sidfot;
+    height: 166px;
+  }
+  .sidfot div {
+    margin: 10px;
   }
   .sidfot h4 {
-    margin-right: 10px;
     font-size: 10px;
+    width: 100%;
     color: black;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
   }
   .sidfot img {
-    width: 30%;
-    margin-right: 115px;
+    align-self: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
   }
   .kontaktinfo-2 {
     padding: 10px;
@@ -336,13 +316,13 @@ td {
   .kontaktinfo-2 ul {
     font-size: 10px;
     position: absolute;
-    top: 280px;
+    top: 340px;
     left: 185px;
     width: 10px;
     height: 10px;
   }
   .kontaktinfo-2 h2 {
-    font-size: 11px;
+    font-size: 14px;
     padding-left: 210px;
     margin-top: 15px;
     margin-bottom: -15px;
@@ -350,6 +330,14 @@ td {
   .kontaktinfo-2 p {
     margin-top: 15px;
     padding-left: 210px;
+  }
+  .kontaktinfo-2 span {
+    font-size: 12px;
+    position: absolute;
+    top: 335px;
+    left: 230px;
+    width: 10px;
+    height: 10px;
   }
   .produktinfo {
     width: 300px;
@@ -363,12 +351,5 @@ td {
   }
   .meny {
     width: 400px;
-  }
-  .sidfot {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
   }
 }
