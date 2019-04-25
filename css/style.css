@@ -1,6 +1,7 @@
 html,
 body {
-  height: 100%;
+  position: relative;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -112,9 +113,9 @@ a:hover {
   margin-left: 10px;
 }
 .huvudinnehåll img {
-  margin: 20%;
-  width: 250px;
-  height: 150px;
+  margin: 12%;
+  width: 70%;
+  height: 30%;
 }
 .huvudinnehåll button {
   background-color: silver;
@@ -225,15 +226,6 @@ td {
 }
 
 @media (max-width: 1400px) {
-  .huvudinnehåll div {
-    width: 300px;
-    height: 380px;
-  }
-  .huvudinnehåll img {
-    margin: 15%;
-    width: 200px;
-    height: 180px;
-  }
   .sidfot h4 {
     margin-right: 200px;
   }
@@ -244,6 +236,9 @@ td {
   .kontaktinfo-2 div {
     width: 450px;
     height: 224px;
+  }
+  .kontaktinfo-2 h2 {
+    font-size: 18px;
   }
   .produktinfo table {
     width: 450px;
@@ -251,15 +246,6 @@ td {
   }
 }
 @media (max-width: 1000px) {
-  .huvudinnehåll div {
-    width: 200px;
-    height: 280px;
-  }
-  .huvudinnehåll img {
-    margin: 25%;
-    width: 100px;
-    height: 80px;
-  }
   .sidfot h4 {
     margin-right: 200px;
   }
@@ -271,42 +257,54 @@ td {
     width: 450px;
     height: 224px;
   }
+
   .produktinfo table {
     width: 450px;
     height: 224px;
-  }
-  .meny {
-    width: 450px;
-    height: 45px;
   }
 }
 @media (max-width: 768px) {
   /* layout för mobil */
 
   .container {
-    height: 180px;
+    height: 1100px;
     border-right: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidhuvud {
+    height: 83px;
   }
   .huvudinnehåll {
-    width: 300px;
-    height: 180px;
+    display: flex;
+    flex-direction: column;
     border: none;
+    padding: 10px;
   }
   .huvudinnehåll div {
-    height: 180px;
-    font-size: 5px;
-  }
-  .huvudinnehåll img {
-    margin: 15%;
-    width: 60px;
-    height: 60px;
+    height: 200px;
   }
   .övrigt {
-    width: 55%;
-    height: 180px;
     font-size: 10px;
+    margin-left: 20px;
     border: none;
   }
+  .övrigt h3 {
+    padding: 0;
+  }
+  .övrigt p {
+    font-style: italic;
+    padding: 0;
+  }
+  .övrigt button {
+    background-color: silver;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .undrar {
+    float: left;
+  }
+
   .sidfot {
     width: 100%;
     height: 130px;
@@ -321,9 +319,11 @@ td {
     margin-right: 115px;
   }
   .kontaktinfo-2 {
-    width: 300px;
+    padding: 10px;
+    width: 380px;
     height: 180px;
     font-size: 10px;
+    border: none;
   }
   .kontaktinfo-2 div {
     width: 100%;
@@ -337,22 +337,24 @@ td {
     font-size: 10px;
     position: absolute;
     top: 280px;
-    left: 140px;
+    left: 185px;
     width: 10px;
     height: 10px;
   }
   .kontaktinfo-2 h2 {
     font-size: 11px;
-    padding-left: 132px;
+    padding-left: 210px;
     margin-top: 15px;
     margin-bottom: -15px;
   }
   .kontaktinfo-2 p {
     margin-top: 15px;
-    padding-left: 132px;
+    padding-left: 210px;
   }
   .produktinfo {
     width: 300px;
+    border: none;
+    padding: 10px;
   }
   .produktinfo table {
     font-size: 10px;
@@ -361,5 +363,12 @@ td {
   }
   .meny {
     width: 400px;
+  }
+  .sidfot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
   }
 }
